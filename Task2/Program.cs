@@ -12,7 +12,7 @@ internal class Program
         }
         Console.WriteLine(jsonString);
         Tovar[] tovar = JsonSerializer.Deserialize<Tovar[]>(jsonString);
-        Tovar[] tovarMax = tovar[0];
+        Tovar tovarMax = tovar[0];
         foreach (Tovar t in tovar)
         {
             if (t.Price > tovarMax.Price)
